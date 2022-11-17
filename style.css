@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: #fff;
+}
+
+.navbar {
+  color: #fff;
+  height: 8vh;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar nav a {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar nav a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  font-weight: 400;
+}
+
+header.page-home {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.hero {
+  height: 52vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+section {
+  padding: 80px 0px;
+}
+
+section h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section img {
+  width: 100%;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+a.btn,
+input[type="submit"] {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #9b0000;
+  padding: 15px 20px;
+  border-radius: 0px 12px 12px 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #7f0000;
+}
+
+.section-top-3-books .button {
+  display: flex;
+  justify-content: center;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.books img {
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.books img:hover {
+  transform: scale(1.1);
+}
+
+.section-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-recently-read img {
+  border-radius: 0px 15px 15px 15px;
+  margin-bottom: 50px;
+}
+
+.section-recently-read p,
+.section-about-me p {
+  margin-bottom: 20px;
+}
+
+.section-about-me img {
+  border-radius: 500px;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #00063f;
+  padding: 20px 0px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+footer h3 {
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer h3 span {
+  font-weight: 700;
+}
+
+footer ul li {
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul li a {
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+footer ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* ================================== */
+/* Favorites page */
+/* ================================== */
+header.page-favorites {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/my-favs-hero-img.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+.section-best-books .section-body {
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-best-books-expo .container {
+  display: grid;
+  height: 60vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.book-container-1 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/mans-search-of-meaning.jpeg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.book-container-2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/science-fictions.jpeg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.book-container-3 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/on-the-shortness-of-life.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.book-container-4 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/cant-hurt-me.jpeg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.book-container-5 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/101-essays.jpeg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+}
+
+/* ================================== */
+/* Recently read page */
+/* ================================== */
+header.page-recents {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/recently-read-hero-img.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+/* ================================== */
+/* About me page */
+/* ================================== */
+header.page-about-me {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/contact-hero-img.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+
+form {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+form > * {
+  border: none;
+}
+
+form input,
+form textarea {
+  border-bottom: 1px solid #000;
+  padding: 10px;
+}
+
+form input[type="submit"] {
+  border: none;
+}
+
+/* ================================== */
+/* Media queries */
+/* ================================== */
+@media (min-width: 584px) {
+  .navbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .books img {
+    max-width: 400px;
+  }
+
+  .section-about-me .section-image img {
+    width: 500px;
+  }
+
+  footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 731px) {
+  .section-body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-image {
+    margin-right: 50px;
+  }
+
+  .section-recently-read img {
+    margin-bottom: 0px;
+  }
+
+  .section-about-me .section-image img {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 981px) {
+  .books {
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .books img {
+    max-width: 250px;
+  }
+
+  .section-recently-read img {
+    max-width: 500px;
+  }
+
+  .section-about-me .section-image img {
+    max-width: 400px;
+  }
+
+  .section-text {
+    width: 500px;
+  }
+}
